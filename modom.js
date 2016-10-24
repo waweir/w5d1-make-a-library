@@ -56,6 +56,19 @@
         return document.querySelector(selector).innerHTML
     }
 
+    // ajax() function that fetches API data
+    var ajax = function() {
+        fetch('https://thinksaydo.com/tiyproxy.php?url=' + encodeURIComponent('https://openapi.etsy.com/v2/listings/active?api_key=h9oq2yf3twf4ziejn10b717i&keywords=' + encodeURIComponent('board games') + '&includes=Images,Shop'))
+            .then(response => response.json())
+            .then(response => items(response.results))
+    }
+    function items(array) {
+        array.forEach(function(item) {
+            console.log(item)
+        })
+    }
+
+
     window.md = {
         one: one,
         all: all,
