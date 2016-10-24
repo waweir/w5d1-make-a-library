@@ -5,7 +5,7 @@ One
 ```
 md.one(selector)
 ```
-Finds one matching element using the defined CSS selector
+Finds one matching element using the defined CSS selector.
 #### Arguments
 selector: The CSS query selector to search on.
 #### Returns
@@ -27,7 +27,7 @@ All
 ```
 md.all(selector)
 ```
-Finds all matching elements using the defined CSS selector
+Finds all matching elements using the defined CSS selector.
 #### Arguments
 selector: The CSS query selector to search on.
 #### Returns
@@ -49,7 +49,7 @@ Remove
 ```
 md.remove(selector)
 ```
-Removes the first matching element using the defined CSS selector
+Removes the first matching element using the defined CSS selector.
 #### Arguments
 selector: The CSS query selector to search on.
 #### Returns
@@ -63,7 +63,7 @@ Removes the first HTML element returned from the CSS query selector.
 ```
 ```javascript
 md.remove('.row')
-// The first removed from HTML. This can be checked by rerunning the all method on the same CSS selector. Result of md.all('.row') after md.remove('.row') is below
+// The first row is removed from HTML. This can be checked by rerunning the all method on the same CSS selector. Result of md.all('.row') after md.remove('.row') is below
 // => <div id="row_2" class="row">Row 2</div
 ```
 
@@ -72,9 +72,10 @@ Add Class
 ```
 md.addClass(selector, className)
 ```
-Adds the defined CSS class to the first element returned from the CSS query selector
+Adds the defined CSS class to the first element returned from the CSS query selector.
 #### Arguments
 selector: The CSS query selector to search on.
+
 className: CSS class to add to the element.
 #### Returns
 Adds the CSS class the first HTML element returned from the CSS query selector.
@@ -95,9 +96,10 @@ Remove Class
 ```
 md.removeClass(selector, className)
 ```
-Removes the defined CSS class to the first element returned from the CSS query selector
+Removes the defined CSS class to the first element returned from the CSS query selector.
 #### Arguments
 selector: The CSS query selector to search on.
+
 className: CSS class to remove from the element.
 #### Returns
 Removes the CSS class the first HTML element returned from the CSS query selector.
@@ -121,6 +123,7 @@ md.hasClass(selector, className)
 Checks if the first element returned from the CSS query selector contains the specified CSS class name.
 #### Arguments
 selector: The CSS query selector to search on.
+
 className: CSS class to check for.
 #### Returns
 True if the element contains the class, false if it does not.
@@ -144,6 +147,7 @@ md.getAttr(selector, attribute)
 Finds the specified attribute of the element defined by the CSS query selector.
 #### Arguments
 selector: The CSS query selector to search on.
+
 attribute: Attribute to search on.
 #### Returns
 Value of the attribute.
@@ -168,7 +172,9 @@ md.setAttr(selector, attribute, value)
 Sets the specified attribute of the element defined by the CSS query selector with the value.
 #### Arguments
 selector: The CSS query selector to search on.
+
 attribute: Attribute to search on.
+
 value: Value to set the attribute to.
 #### Returns
 Sets the value of the attribute.
@@ -192,6 +198,7 @@ md.setHTML(selector, value)
 Sets the inner HTML of the element defined by the CSS query selector with the value.
 #### Arguments
 selector: The CSS query selector to search on.
+
 value: HTML to insert into the element.
 #### Returns
 Sets the HTML of the element.
